@@ -1,0 +1,346 @@
+.promo {
+  &__image {
+    position: relative;
+    top: 0;
+    z-index: 2;
+
+    object-fit: contain;
+    object-fit: cover;
+    height: 100%;
+    height: 100vh;
+
+    &-wrap {
+      position: absolute;
+      top: 0;
+      left: -12%;
+
+      &::before {
+        position: absolute;
+        top: 0;
+        z-index: 3;
+
+        display: block;
+        width: 100%;
+        height: 100%;
+
+        @include bg-image($path: '../images/sparks_front.png');
+
+        animation: sparks-back-pulse 4s infinite linear 500ms;
+        content: '';
+      }
+
+      &::after {
+        position: absolute;
+        top: 0;
+        z-index: 1;
+
+        display: block;
+        width: 100%;
+        height: 100%;
+
+        @include bg-image($path: '../images/sparks_back.png');
+
+        animation: sparks-front-pulse 4s infinite linear;
+        content: '';
+      }
+
+      @media screen and (min-width: 1024px) {
+        left: 19%;
+      }
+
+      @media screen and (min-width: 1024px) and (height: 1366px) {
+        left: -9%;
+      }
+
+      @media screen and (min-width: 1024px) and (height: 768px) {
+        left: 12%;
+      }
+
+      @media screen and (min-width: 1200px) {
+        top: -44px;
+        left: 5%;
+      }
+
+      @media screen and (min-width: 1366px) {
+        top: 0;
+        left: 19%;
+      }
+
+      @media screen and (min-width: 1366px) and (height: 1024px) {
+        left: 11%;
+      }
+
+      @media screen and (min-width: 1440px) {
+        left: 21%;
+      }
+
+      @media screen and (min-width: 1920px) {
+        bottom: initial;
+        left: 25px;
+      }
+    }
+  }
+
+  &__content {
+    position: absolute;
+
+    bottom: 14%;
+    left: 50%;
+    z-index: 4;
+
+    text-align: center;
+
+    transform: translateX(-50%);
+
+    @media screen and (min-width: 768px) {
+      bottom: 18%;
+    }
+
+    @media screen and (min-width: 812px) and (height: 375px) {
+      bottom: 13%;
+    }
+
+    @media screen and (min-width: 1024px) {
+      bottom: 11%;
+    }
+
+    @media screen and (min-width: 1366px) {
+      bottom: 18%;
+    }
+
+    @media screen and (min-width: 1920px) {
+      top: 244px;
+      left: 1391px;
+    }
+  }
+
+  &__welcome-bonus {
+    margin: 0;
+    margin-bottom: 20px;
+
+    text-align: center;
+
+    @media screen and (min-width: 768px) {
+      margin-bottom: 30px;
+    }
+
+    @media screen and (min-width: 1920px) {
+      margin-bottom: 56px;
+    }
+  }
+
+  &__code {
+    padding: 10px 20px;
+
+    font-family: Arial;
+
+    border-width: 1px;
+    border-color: $gray-color;
+    border-style: dashed;
+    border-top-left-radius: 40px;
+    border-bottom-left-radius: 40px;
+
+    @media (orientation: landscape) {
+      border-color: #ada1a1;
+    }
+
+    @media screen and (min-width: 768px) and (min-height: 1024px) {
+      padding: 15px 30px;
+    }
+
+    @media screen and (min-width: 1024px) {
+      border-color: #ada1a1;
+    }
+
+    @media screen and (min-width: 1920px) {
+      padding-left: 35px;
+      padding-right: 22px;
+    }
+
+    &-wrap {
+      display: flex;
+      margin-bottom: 20px;
+
+      justify-content: center;
+
+      @media screen and (min-width: 768px) {
+        margin-bottom: 30px;
+      }
+
+      @media screen and (min-width: 1920px) {
+        margin-bottom: 60px;
+        padding-left: 51px;
+        padding-right: 17px;
+
+        justify-content: initial;
+      }
+    }
+
+    &-text {
+      font-size: 14px;
+      line-height: 1;
+
+      text-align: center;
+      letter-spacing: 4px;
+      text-transform: uppercase;
+      color: $primary-color;
+
+      @media screen and (min-width: 768px) {
+        font-size: 24px;
+      }
+
+      @media screen and (min-width: 1920px) {
+        font-size: 40px;
+        line-height: 43.51px;
+      }
+    }
+  }
+
+  &__copy-code {
+    padding: 10px 20px;
+
+    font-family: Arial;
+    font-size: 11px;
+    line-height: 1;
+
+    color: $white-color;
+    text-transform: uppercase;
+
+    background: none;
+
+    border-width: 1px;
+    border-color: $gray-color;
+    border-style: dashed;
+    border-top-right-radius: 40px;
+    border-bottom-right-radius: 40px;
+
+    transition: all 0.2s linear;
+    cursor: pointer;
+
+    &:hover {
+      background: #ffffff33;
+    }
+
+    @media (orientation: landscape) {
+      border-color: $light-gray-color;
+    }
+
+    @media screen and (min-width: 768px) and (min-height: 1024px) {
+      padding: 15px 30px;
+
+      font-size: 16px;
+    }
+
+    @media screen and (min-width: 768px) and (min-height: 1920px) {
+      letter-spacing: 3px;
+    }
+
+    @media screen and (min-width: 1024px) {
+      border-color: $light-gray-color;
+    }
+
+    @media screen and (min-width: 1920px) {
+      padding-right: 35px;
+      padding-left: 35px;
+
+      letter-spacing: 3px;
+    }
+  }
+
+  &__button {
+    padding: 13px 50px;
+
+    font-family: 'Arial';
+    font-size: 16px;
+    line-height: 1.1;
+
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: $white-color;
+
+    background-color: $primary-color;
+    border: 0;
+    border-radius: 40px;
+    box-shadow: 0px 16px 24px 0px rgba(0, 0, 0, 0.004);
+
+    transition: all 0.2s linear;
+    cursor: pointer;
+
+    &:hover {
+      background-color: darken($primary-color, 10%);
+    }
+
+    @media screen and (min-width: 768px) and (min-height: 1024px) {
+      padding: 24px 90px;
+    }
+
+    @media screen and (min-width: 1920px) {
+      padding: 29px 121px;
+
+      font-size: 20px;
+    }
+  }
+
+  &__footer {
+    z-index: 5;
+
+    display: flex;
+    margin-top: auto;
+    padding: 0 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+    flex-flow: column;
+    align-items: center;
+
+    @media (orientation: landscape) {
+      flex-flow: row;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    @media (min-width: 768px) {
+      padding: 0 70px;
+      padding-bottom: 30px;
+
+      flex-flow: row;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    @media (min-width: 1920px) {
+      padding-bottom: 56px;
+    }
+  }
+
+  &__logo {
+    width: 80px;
+    min-width: 80px;
+    margin-bottom: 4px;
+
+    @media (min-width: 768px) {
+      min-width: auto;
+    }
+
+    @media (min-width: 1024px) {
+      width: initial;
+    }
+  }
+
+  &__cond {
+    font-family: 'Arial';
+    font-size: 10px;
+    line-height: 1.571;
+
+    color: rgb(70, 70, 70);
+    letter-spacing: 1.4px;
+
+    @media (min-width: 768px) {
+      font-size: 14px;
+    }
+
+    @media (min-width: 1366px) {
+      padding-top: 45px;
+    }
+  }
+}

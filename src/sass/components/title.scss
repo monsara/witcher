@@ -1,0 +1,43 @@
+.title {
+  font-family: 'Cambria';
+  font-weight: bold;
+  line-height: 1;
+
+  color: #fff;
+
+  &_level_1 {
+    font-size: 90px;
+    font-size: 28vw;
+
+    @media (orientation: landscape) {
+      font-size: 90px;
+    }
+
+    @media screen and (min-width: 768px) and (min-height: 1024px) {
+      font-size: 170px;
+    }
+
+    @media screen and (min-width: 1024px) {
+      font-size: 208px;
+    }
+  }
+
+  &_level_2 {
+    font-size: 29px;
+    font-size: 9vw;
+
+    text-transform: uppercase;
+
+    @media (orientation: landscape) {
+      font-size: 29px;
+    }
+
+    @media screen and (min-width: 768px) and (min-height: 1024px) {
+      font-size: 54px;
+    }
+
+    @media screen and (min-width: 1024px) {
+      font-size: 67px;
+    }
+  }
+}

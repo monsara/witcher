@@ -1,0 +1,8 @@
+.wrapper {
+  width: 100%;
+  min-height: 100vh;
+
+  font-family: $main-font-stack;
+
+  @include bg-image($path: '../images/bg.jpg', $pos: 80%);
+}

@@ -1,131 +1,86 @@
-![Banner](./banner.png)
+# witcher
 
-# Gulp Starter Kit &middot; [![Build Status](https://img.shields.io/travis/npm/npm/latest.svg?style=flat-square)](https://travis-ci.org/npm/npm) [![npm](https://img.shields.io/npm/v/npm.svg?style=flat-square)](https://www.npmjs.com/package/npm) [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com) [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg?style=flat-square)](https://github.com/your/your-project/blob/master/LICENSE)
+https://monsara.github.io/witcher/
 
-Базовая Gulp-сборка для вёрстки.
+Layout and styling of the web page. Web page based on a semantic responsive
+markup on BEM methodology.
 
-- Собирает и оптимизирует `html`, `sass`, `js`, изображения и шрифты
-- Использует `gulp-rigger` для работы с html-chunks
-- Включает файлы настроек различных линтеров
-- Все ошибки логируются в консоль
-- Добавляет вендорные префиксы
-- Совмещает и оптимизирует медиазапросы
-- Есть режим разработки и сборки в продакшн
-- Автоматический деплой на GitHub Pages
+## Browser Support
+
+New browsers — Firefox, Chrome, Opera, Microsoft Edge and IE 11, newer versions
+of Android/iOS, etc.
+
+## Used techniques
+
+### HTML/CSS
+
+- Valid, semantic, cross-browser layout
+- Responsive web design
+- CSS Flexbox
+- CSS Media Queries
+- Mobile first
+- Fexible images
+- Optimized and minified images
+- BEM methodology
+- Sass (mixins, variables, SCSS modules)
+
+### JavaScript
+
+- Copy code text to the clipboard by clicking on the copy code button
+
+## Instruments
+
+- Git
+- Npm
+- Gulp
+- Chrome DevTools
+- VS Code
 
 ## Developing
 
-### Prerequisites
+The project uses the basic gulp-builder for layout
+[Gulp Starter Kit](https://github.com/luxplanjay/gulp-starter-kit)
 
-Для корректной работы SASS-компилятора и других инструментов, необходимо один
-раз глобально поставить дополнительные пакеты, выполнив в терминале следующие
-команды. Пользователям MacOS ничего делать не нужно.
+- Collects and optimizes HTML, Sass, JS, images and fonts
+- Uses gulp-rigger to work with html chunks
+- Includes configuration files for various linters
+- All errors are logged to the console
+- Adds vendor prefixes
+- Optimization Media Queries
+- There is a development and assembly mode in prod
+- Automatic Deployment on GitHub Pages
 
-Пользователям **Windows**.
+[Instruction for use Gulp Starter Kit](https://github.com/luxplanjay/gulp-starter-kit)
 
-```shell
-npm install --global windows-build-tools
-```
+### Run site locally
 
-Пользователям **Linux**.
+Before using the Gulp Starter Kit, make sure that Gulp and Node.js are installed
+on your computer
 
-```shell
-sudo apt-get install gcc g++ make
-```
+To build the site on your PC, run the following commands in the terminal:
 
-### Setting up Dev
-
-Для быстрого старта необходимо склонировать репозиторий.
-
-```shell
-git clone https://github.com/luxplanjay/gulp-starter-kit.git
-```
-
-Переименовать папку сборки по имени вашего проекта.
+- Clone the repository on your computer
 
 ```shell
-mv gulp-starter-kit имя_проекта
+git clone https://github.com/monsara/generator-hub.git
 ```
 
-Затем перейти в папку проекта.
+- Go to the project folder
 
 ```shell
-cd имя_проекта
+cd generator-hub
 ```
 
-Находясь в папке проекта удалить папку `.git` связанную с репозиторием сборки
-выполнив следующую команду.
-
-```shell
-npx rimraf .git
-```
-
-Установить все зависимости.
+- Install dependencies
 
 ```shell
 npm install
 ```
 
-И запустить режим разработки.
+- Run the build project
 
 ```shell
 npm start
 ```
 
-Во вкладке браузера перейти по адресу
-[http://localhost:1234](http://localhost:1234).
-
-### Building
-
-Для того чтобы создать оптимизированные файлы для хостинга, необходимо выполнить
-следующую команду. В корне проекта появится папка `build` со всеми
-оптимизированными ресурсами.
-
-```shell
-npm run build
-```
-
-### Deploying / Publishing
-
-Сборка может автоматически деплоить билд на GitHub Pages удаленного (remote)
-репозитория. Для этого необходимо в файле `package.json` отредактировать поле
-`homepage`, заменив имя пользователя и репозитория на свои.
-
-```json
-"homepage": "https://имя_пользователя.github.io/имя_репозитория"
-```
-
-После чего в терминале выполнить следующую команду.
-
-```shell
-npm run deploy
-```
-
-Если нет ошибок в коде и свойство `homepage` указано верно, запустится сборка
-проекта в продакшен, после чего содержимое папки `build` будет помещено в ветку
-`gh-pages` на удаленном (remote) репозитории. Через какое-то время живую
-страницу можно будет посмотреть по адресу указанному в отредактированном
-свойстве `homepage`.
-
-## Configuration
-
-- Все файлы стилей должны лежать в папке `src/sass` и импортироваться в
-  `src/sass/main.scss`
-- Изображения добавляйте в папку `src/images`
-- Локальные шрифты идут в папку `src/fonts`
-
-Пример изображения в HTML, после того как файл `picture.png` был добавлен в
-папку `src/images`.
-
-```html
-<img src="./images/picture.png" />
-```
-
-Пример изображения в CSS, после того как файл `picture.png` был добавлен в папку
-`src/images`.
-
-```css
-.my-class {
-  background-image: url('../images/picture.png');
-}
-```
+- In the browser tab go to [http://localhost:1234](http://localhost:1234)

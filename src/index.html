@@ -4,46 +4,58 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Placeholder title</title>
+
+    <meta name="description" content="Witcher. 300% welcome bonuse. Play now" />
+    <meta name="keywords" content="Witcher, Play now" />
+    <meta name="author" content="Viktor Hirenko" />
+
+    <title>Witchere</title>
     <!-- Сюда будет всталена ссылка на файл стилей -->
     <!-- inject:css -->
     <!-- endinject -->
   </head>
 
   <body class="page">
-    <main class="main-content">
-      <h1 class="visually-hidden">Dashboard main page</h1>
+    <div class="wrapper">
+      <main class="main-content container">
+        <h1 class="visually-hidden">Witcher main page</h1>
 
-      <section class="promo">
-        <h2 class="promo__title">Promo section</h2>
+        <section class="promo page__promo">
+          <h2 class="promo__title visually-hidden">Promo section</h2>
 
-        <div class="promo__img-wrap">
-          <img src="" alt="" class="promo__image" />
-        </div>
-
-        <div class="promo__content">
-          <p class="promo__welcome-bonus">
-            <span class="title title_level_1">300%</span>
-            <span class="title title_level_1">welcome bonus</span>
-          </p>
-
-          <div class="promo__code-wrap">
-            <div class="promo__code">
-              <span class="promo__code-text">Witcher</span>
-            </div>
-            <div class="promo__copy-code">Copy code</div>
+          <div class="promo__image-wrap">
+            <img src="./images/witcher.png" alt="" class="promo__image image" />
           </div>
 
-          <button class="promo__button">Play now</button>
-        </div>
+          <div class="promo__content">
+            <p class="promo__welcome-bonus">
+              <span class="title title_level_1">300%</span><br />
+              <span class="title title_level_2">welcome bonus</span>
+            </p>
 
-        <footer class="promo__footer">
-          <img src="" alt="" class="logo" />
+            <form class="promo__code-wrap js_form">
+              <div class="promo__code">
+                <span class="promo__code-text js-code-text">Witcher</span>
+              </div>
 
-          <span>*Terms and Conditions Apply</span>
-        </footer>
-      </section>
-    </main>
+              <button class="promo__copy-code js-copy-code">Copy code</button>
+            </form>
+
+            <button class="promo__button">Play now</button>
+          </div>
+
+          <footer class="promo__footer">
+            <img
+              src="./images/logo.png"
+              alt="logl"
+              class="promo__logo logo image"
+            />
+
+            <span class="promo__cond">*Terms and Conditions Apply</span>
+          </footer>
+        </section>
+      </main>
+    </div>
     <!-- Сюда будет всталена ссылка на файл скриптов -->
     <!-- inject:js -->
     <!-- endinject -->
