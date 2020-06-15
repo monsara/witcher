@@ -131,7 +131,7 @@
         font-size: 90px;
         font-size: 28vw;
 
-        @media (orientation: landscape) {
+        @media scren and (orientation: landscape) {
           font-size: 90px;
         }
 
@@ -150,7 +150,7 @@
 
         text-transform: uppercase;
 
-        @media (orientation: landscape) {
+        @media screen and (orientation: landscape) {
           font-size: 29px;
         }
 
