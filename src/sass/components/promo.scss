@@ -12,7 +12,11 @@
     &-wrap {
       position: absolute;
       top: 0;
-      left: -12%;
+      // left: -12%;
+      left: 50%;
+      width: 100%;
+
+      transform: translateX(-50%);
 
       &::before {
         position: absolute;
@@ -44,38 +48,42 @@
         content: '';
       }
 
+      @media screen and (orientation: landscape) {
+        width: initial;
+      }
+
       @media screen and (min-width: 1024px) {
-        left: 19%;
+        // left: 19%;
       }
 
       @media screen and (min-width: 1024px) and (height: 1366px) {
-        left: -9%;
+        // left: -9%;
       }
 
       @media screen and (min-width: 1024px) and (height: 768px) {
-        left: 12%;
+        // left: 12%;
       }
 
       @media screen and (min-width: 1200px) {
-        left: 17%;
+        // left: 17%;
       }
 
       @media screen and (min-width: 1366px) {
         top: 0;
-        left: 19%;
+        // left: 19%;
       }
 
       @media screen and (min-width: 1366px) and (height: 1024px) {
-        left: 11%;
+        // left: 11%;
       }
 
       @media screen and (min-width: 1440px) {
-        left: 21%;
+        // left: 21%;
       }
 
       @media screen and (min-width: 1920px) {
         bottom: initial;
-        left: 25px;
+        // left: 25px;
       }
     }
   }
